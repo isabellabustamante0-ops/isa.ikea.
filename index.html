@@ -1,72 +1,257 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Isabella Bustamante — CV Interactivo</title><meta name="description" content="Digital Content & Sustainability Analyst. CV interactivo sin PDF.">
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Isabella Bustamante — CV</title>
+<meta name="description" content="Digital Content & Sustainability Analyst. CV web minimalista.">
 <link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 <style>
-:root{--brand:#0058A3;--accent:#FFCC00;--bg:#fff;--text:#111827;--muted:#6b7280;--card:#f9fafb;--border:#e5e7eb;--radius:16px}
-*{box-sizing:border-box}html:focus-within{scroll-behavior:smooth}
-body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial;color:var(--text);background:var(--bg)}
-a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
-.container{max-width:920px;margin:auto;padding:0 16px}.nav{position:sticky;top:0;background:rgba(255,255,255,.8);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);z-index:10}
-.nav-inner{display:flex;justify-content:space-between;align-items:center;height:56px}.nav ul{display:flex;gap:12px;list-style:none;margin:0;padding:0}
-.chip{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:.25rem .6rem;font-size:.8rem}
-.btn{display:inline-flex;gap:.5rem;align-items:center;padding:.5rem .9rem;border:1px solid var(--border);border-radius:999px;background:#fff}
-.btn.primary{background:var(--brand);color:#fff;border-color:var(--brand)}.hero{padding:56px 0 24px;background:var(--bg)}
-h1{font-size:clamp(28px,4.5vw,44px);line-height:1.2;margin:.2em 0}h2{font-size:clamp(22px,3.5vw,30px);margin:0 0 12px}.muted{color:var(--muted)}
-.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px}section{padding:28px 0}.grid{display:grid;gap:16px}
-@media (min-width:720px){.grid-2{grid-template-columns:1fr 1fr}.grid-3{grid-template-columns:repeat(3,1fr)}}
-footer{border-top:1px solid var(--border);padding:24px 0;color:var(--muted)}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
-</style></head>
+  :root{
+    --ink-900:#0a0a0a; --ink-800:#101010; --ink-700:#171717;
+    --fg:#e5e5e5; --muted:#9ca3af; --line:#262626; --accent:#FFCC00;
+  }
+  *{box-sizing:border-box}
+  html:focus-within{scroll-behavior:smooth}
+  body{margin:0; font:16px/1.7 'Inter',system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial; background:var(--ink-900); color:var(--fg);}
+  a{color:inherit; text-decoration:underline; text-underline-offset:4px; text-decoration-color:#3f3f46}
+  a:hover{ text-decoration-color:#d4d4d8 }
+  .container{max-width:720px; margin:auto; padding:0 16px}
+  .nav{position:sticky; top:0; z-index:10; background:rgba(10,10,10,.7); backdrop-filter:saturate(140%) blur(10px); border-bottom:1px solid var(--line)}
+  .nav-inner{height:56px; display:flex; align-items:center; justify-content:space-between}
+  .nav ul{display:flex; gap:14px; list-style:none; margin:0; padding:0}
+  .nav a{ text-decoration:none }
+  .nav a:hover{ text-decoration:underline }
+  header{padding:76px 0 18px}
+  h1{font-size:clamp(28px,4.5vw,44px); line-height:1.15; margin:.2em 0}
+  h2{font-size:clamp(20px,3.2vw,28px); margin:0 0 10px}
+  .muted{color:var(--muted)}
+  .section{scroll-margin-top:88px; padding:28px 0; border-top:1px solid var(--line)}
+  .card{background:var(--ink-800); border:1px solid var(--line); border-radius:16px; padding:18px}
+  .grid{display:grid; gap:16px}
+  @media (min-width:780px){ .grid-2{grid-template-columns:1fr 1fr} .grid-3{grid-template-columns:repeat(3,1fr)} }
+  .tag{display:inline-block; border:1px solid var(--line); border-radius:999px; padding:.25rem .6rem; font-size:.8rem; color:#d4d4d8}
+  .btn{display:inline-flex; gap:.5rem; align-items:center; padding:.5rem .9rem; border:1px solid var(--line); border-radius:999px; background:var(--ink-800)}
+  .btn:hover{background:#141414}
+  footer{border-top:1px solid var(--line); padding:28px 0; color:var(--muted)}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+</style>
+</head>
 <body>
 <a href="#inicio" class="sr-only focus:not-sr-only">Saltar al contenido</a>
-<nav class="nav"><div class="container nav-inner">
-  <a href="#inicio"><strong>Isabella Bustamante</strong></a>
-  <ul><li><a href="#experiencia">Experiencia</a></li><li><a href="#proyectos">Proyectos</a></li><li><a href="#habilidades">Habilidades</a></li><li><a href="#valores">Valores</a></li><li><a href="#contacto">Contacto</a></li></ul>
-</div></nav>
-<header id="inicio" class="hero"><div class="container">
-  <p class="muted">Madrid, España</p>
-  <h1>Isabella Bustamante</h1>
-  <p style="font-size:1.15rem;margin:.3rem 0 1rem"><strong>Digital Content & Sustainability Analyst</strong></p>
-  <p class="card" style="margin:0;font-size:1rem">Profesional en Comunicación y Sostenibilidad con experiencia internacional. Especialista en contenido digital, reporting ESG y SEO. He liderado proyectos de digitalización del reporting y optimización de contenidos para e‑commerce, alineando narrativas con métricas de desempeño y foco en impacto (personas y planeta).</p>
-  <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
-    <a class="btn" href="mailto:isabellabustamante0@gmail.com">✉️ Email</a>
-    <a class="btn" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/isabella-bustamante-a2212898/">in LinkedIn</a>
-    <span class="btn" aria-disabled="true">📞 +34 695 293 897</span>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="#inicio" style="font-weight:600">Isabella Bustamante</a>
+    <ul>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#valores">Valores</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
   </div>
-</div></header>
+</nav>
+
+<header id="inicio">
+  <div class="container">
+    <p class="muted">Madrid, España</p>
+    <h1>Isabella Bustamante</h1>
+    <p style="font-size:1.1rem; margin:.35rem 0 1rem"><strong>Digital Content &amp; Sustainability Analyst</strong></p>
+    <p class="card" style="margin:0">
+      Profesional en Comunicación y Sostenibilidad con experiencia internacional. Especialista en contenido digital, reporting ESG y SEO.
+      He liderado proyectos de digitalización del reporting y optimización de contenidos para e-commerce, alineando narrativas con métricas de desempeño y foco en impacto (personas y planeta).
+    </p>
+    <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap">
+      <a class="btn" href="mailto:isabellabustamante0@gmail.com">✉️ Email</a>
+      <a class="btn" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/isabella-bustamante-a2212898/">in LinkedIn</a>
+      <span class="btn" aria-disabled="true">📞 +34 695 293 897</span>
+    </div>
+  </div>
+</header>
+
 <main>
-<section id="experiencia"><div class="container"><h2>Experiencia</h2><div class="grid">
-  <article class="card"><div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap"><strong>ESG Reporting · ACCIONA (Global Sustainability)</strong><span class="muted">Ene 2025 – Actualidad · Madrid, España</span></div><ul><li>Redacción de informes de sostenibilidad conforme a normativa europea y marcos internacionales.</li><li>Liderazgo de iniciativas de digitalización del reporting y consistencia narrativa en canales digitales.</li><li>Coordinación transversal para asegurar calidad de datos y seguimiento de KPIs ESG.</li></ul></article>
-  <article class="card"><div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap"><strong>Coordinadora de proyectos · Prodigioso Volcán</strong><span class="muted">Feb 2024 – Dic 2024 · Madrid, España</span></div><ul><li>Gestión integral de proyectos de comunicación y sostenibilidad (planificación, contenidos, QA).</li><li>Optimización editorial y SEO para clientes corporativos.</li><li>Apoyo en análisis de doble materialidad y taxonomías.</li></ul></article>
-  <article class="card"><div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap"><strong>Editora de contenidos · Sodimac Perú / Falabella</strong><span class="muted">2022 – 2023 · Lima, Perú</span></div><ul><li>Planificación, creación y migración de contenidos web para falabella.com.</li><li>Ejecución de tácticas SEO, email marketing e influencer marketing.</li><li>Elaboración de informes de resultados y aprendizajes de UX content.</li></ul></article>
-  <article class="card"><div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap"><strong>Fundadora · Mishka Tea</strong><span class="muted">2018 – 2022 · Lima, Perú</span></div><ul><li>Diseño de identidad visual, ventas minoristas y estrategia digital.</li><li>Operación sostenible con foco en productos orgánicos.</li><li>La marca fue adquirida por un negocio de café en 2022.</li></ul></article>
-</div></div></section>
-<section id="proyectos"><div class="container"><h2>Proyectos clave</h2><div class="grid grid-2">
-  <a class="card" href="https://atlas.acciona.com/" target="_blank" rel="noreferrer"><div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><strong>ATLAS — Plataforma de reporting de sostenibilidad (ACCIONA)</strong><span aria-hidden="true">↗</span></div><p>Conceptualización y liderazgo del proyecto. Plataforma que muestra el verdadero impacto de los proyectos desde el contexto local (glocal).</p><div style="display:flex;gap:8px;flex-wrap:wrap"><span class="chip">ESG</span><span class="chip">Reporting</span><span class="chip">Producto Digital</span></div></a>
-  <a class="card" href="https://www.falabella.com.pe/" target="_blank" rel="noreferrer"><div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><strong>Falabella.com — Migración y optimización de contenido (Sodimac)</strong><span aria-hidden="true">↗</span></div><p>Participación en la migración de contenidos web y optimización SEO para mejorar la relevancia y la experiencia del usuario.</p><div style="display:flex;gap:8px;flex-wrap:wrap"><span class="chip">SEO</span><span class="chip">Content Ops</span><span class="chip">E‑commerce</span></div></a>
-  <a class="card" href="https://eleker.pe/" target="_blank" rel="noreferrer"><div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><strong>Eleker.pe — Desarrollo web y redes sociales</strong><span aria-hidden="true">↗</span></div><p>Soporte en el desarrollo del sitio y gestión de redes sociales, alineando mensajes de marca con objetivos de conversión.</p><div style="display:flex;gap:8px;flex-wrap:wrap"><span class="chip">Web</span><span class="chip">Social</span><span class="chip">Branding</span></div></a>
-</div></div></section>
-<section id="habilidades"><div class="container"><h2>Habilidades</h2><div class="grid grid-3">
-  <div class="card"><h3 style="margin:0 0 8px">Core</h3><ul><li>Content Strategy</li><li>SEO</li><li>Reporting ESG</li><li>Storytelling</li><li>Project Management</li></ul></div>
-  <div class="card"><h3 style="margin:0 0 8px">Herramientas</h3><ul><li>Microsoft Office</li><li>Adobe Suite</li><li>GIS</li><li>Looker Studio</li><li>Excel</li></ul></div>
-  <div class="card"><h3 style="margin:0 0 8px">Idiomas</h3><ul><li>Español (nativo)</li><li>Inglés (C1)</li><li>Italiano (B1)</li></ul></div>
-</div></div></section>
-<section id="valores"><div class="container"><h2>Valores IKEA</h2><div class="grid grid-3">
-  <div class="card"><strong>🌿 Sostenibilidad</strong><p class="muted" style="margin:.3rem 0 0">Impacto real en personas y planeta.</p></div>
-  <div class="card"><strong>💡 Innovación</strong><p class="muted" style="margin:.3rem 0 0">Mejora continua y creatividad útil.</p></div>
-  <div class="card"><strong>👥 Colaboración</strong><p class="muted" style="margin:.3rem 0 0">Trabajo en equipo, diversidad e inclusión.</p></div>
-</div></div></section>
-<section id="contacto"><div class="container"><h2>Contacto</h2><div class="grid grid-2">
-  <div class="card"><h3 style="margin:0 0 8px">Hablemos</h3><p class="muted" style="margin:.3rem 0 1rem">Te responderé lo antes posible.</p><ul><li>✉️ <a href="mailto:isabellabustamante0@gmail.com">isabellabustamante0@gmail.com</a></li><li>📞 +34 695 293 897</li><li>in <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/isabella-bustamante-a2212898/">LinkedIn</a></li></ul></div>
-  <form class="card" action="https://formsubmit.co/isabellabustamante0@gmail.com" method="POST"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_subject" value="Nuevo mensaje desde tu web CV"><input type="hidden" name="_template" value="table">
-    <label>Nombre<br><input name="name" required style="width:100%;padding:.6rem;border:1px solid var(--border);border-radius:12px"></label><br><br>
-    <label>Email<br><input name="email" type="email" required style="width:100%;padding:.6rem;border:1px solid var(--border);border-radius:12px"></label><br><br>
-    <label>Mensaje<br><textarea name="message" rows="4" required style="width:100%;padding:.6rem;border:1px solid var(--border);border-radius:12px"></textarea></label><br><br>
-    <button class="btn primary" type="submit">Enviar</button>
-  </form>
-</div></div></section>
+  <section id="experiencia" class="section">
+    <div class="container">
+      <h2>Experiencia</h2>
+      <div class="grid">
+        <article class="card">
+          <div style="display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap">
+            <strong>ESG Reporting · ACCIONA (Global Sustainability)</strong>
+            <span class="muted">Ene 2025 – Actualidad · Madrid, España</span>
+          </div>
+          <ul>
+            <li>Redacción de informes de sostenibilidad conforme a normativa europea y marcos internacionales.</li>
+            <li>Liderazgo de iniciativas de digitalización del reporting y consistencia narrativa en canales digitales.</li>
+            <li>Coordinación transversal para asegurar calidad de datos y seguimiento de KPIs ESG.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div style="display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap">
+            <strong>Coordinadora de proyectos · Prodigioso Volcán</strong>
+            <span class="muted">Feb 2024 – Dic 2024 · Madrid, España</span>
+          </div>
+          <ul>
+            <li>Gestión integral de proyectos de comunicación y sostenibilidad (planificación, contenidos, QA).</li>
+            <li>Optimización editorial y SEO para clientes corporativos.</li>
+            <li>Apoyo en análisis de doble materialidad y taxonomías.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div style="display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap">
+            <strong>Editora de contenidos · Sodimac Perú / Falabella</strong>
+            <span class="muted">2022 – 2023 · Lima, Perú</span>
+          </div>
+          <ul>
+            <li>Planificación, creación y migración de contenidos web para falabella.com.</li>
+            <li>Ejecución de tácticas SEO, email marketing e influencer marketing.</li>
+            <li>Elaboración de informes de resultados y aprendizajes de UX content.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div style="display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap">
+            <strong>Fundadora · Mishka Tea</strong>
+            <span class="muted">2018 – 2022 · Lima, Perú</span>
+          </div>
+          <ul>
+            <li>Diseño de identidad visual, ventas minoristas y estrategia digital.</li>
+            <li>Operación sostenible con foco en productos orgánicos.</li>
+            <li>La marca fue adquirida por un negocio de café en 2022.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos" class="section">
+    <div class="container">
+      <h2>Proyectos clave</h2>
+      <div class="grid grid-2">
+        <a class="card" href="https://atlas.acciona.com/" target="_blank" rel="noreferrer">
+          <div style="display:flex; justify-content:space-between; align-items:center; gap:8px">
+            <strong>ATLAS — Plataforma de reporting de sostenibilidad (ACCIONA)</strong>
+            <span aria-hidden="true" class="muted">↗</span>
+          </div>
+          <p>Conceptualización y liderazgo del proyecto. Plataforma que muestra el verdadero impacto de los proyectos desde el contexto local (glocal).</p>
+          <div style="display:flex; gap:8px; flex-wrap:wrap">
+            <span class="tag">ESG</span><span class="tag">Reporting</span><span class="tag">Producto Digital</span>
+          </div>
+        </a>
+
+        <a class="card" href="https://www.falabella.com.pe/" target="_blank" rel="noreferrer">
+          <div style="display:flex; justify-content:space-between; align-items:center; gap:8px">
+            <strong>Falabella.com — Migración y optimización de contenido (Sodimac)</strong>
+            <span aria-hidden="true" class="muted">↗</span>
+          </div>
+          <p>Participación en la migración de contenidos web y optimización SEO para mejorar la relevancia y la experiencia del usuario.</p>
+          <div style="display:flex; gap:8px; flex-wrap:wrap">
+            <span class="tag">SEO</span><span class="tag">Content Ops</span><span class="tag">E-commerce</span>
+          </div>
+        </a>
+
+        <a class="card" href="https://eleker.pe/" target="_blank" rel="noreferrer">
+          <div style="display:flex; justify-content:space-between; align-items:center; gap:8px">
+            <strong>Eleker.pe — Desarrollo web y redes sociales</strong>
+            <span aria-hidden="true" class="muted">↗</span>
+          </div>
+          <p>Soporte en el desarrollo del sitio y gestión de redes sociales, alineando mensajes de marca con objetivos de conversión.</p>
+          <div style="display:flex; gap:8px; flex-wrap:wrap">
+            <span class="tag">Web</span><span class="tag">Social</span><span class="tag">Branding</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="habilidades" class="section">
+    <div class="container">
+      <h2>Habilidades</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3 style="margin:0 0 8px">Core</h3>
+          <ul class="muted">
+            <li>Content Strategy</li><li>SEO</li><li>Reporting ESG</li><li>Storytelling</li><li>Project Management</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 8px">Herramientas</h3>
+          <ul class="muted">
+            <li>Microsoft Office</li><li>Adobe Suite</li><li>GIS</li><li>Looker Studio</li><li>Excel</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 8px">Idiomas</h3>
+          <ul class="muted">
+            <li>Español (nativo)</li><li>Inglés (C1)</li><li>Italiano (B1)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="valores" class="section">
+    <div class="container">
+      <h2>Valores IKEA</h2>
+      <div class="grid grid-3">
+        <div class="card"><strong>🌿 Sostenibilidad</strong><p class="muted" style="margin:.3rem 0 0">Impacto real en personas y planeta.</p></div>
+        <div class="card"><strong>💡 Innovación</strong><p class="muted" style="margin:.3rem 0 0">Mejora continua y creatividad útil.</p></div>
+        <div class="card"><strong>👥 Colaboración</strong><p class="muted" style="margin:.3rem 0 0">Trabajo en equipo, diversidad e inclusión.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="section">
+    <div class="container">
+      <h2>Contacto</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 style="margin:0 0 8px">Hablemos</h3>
+          <p class="muted" style="margin:.3rem 0 1rem">Te responderé lo antes posible.</p>
+          <ul class="muted">
+            <li>✉️ <a href="mailto:isabellabustamante0@gmail.com">isabellabustamante0@gmail.com</a></li>
+            <li>📞 +34 695 293 897</li>
+            <li>in <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/isabella-bustamante-a2212898/">LinkedIn</a></li>
+          </ul>
+        </div>
+        <form class="card" action="https://formsubmit.co/isabellabustamante0@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde tu web CV">
+          <input type="hidden" name="_template" value="table">
+          <label>Nombre<br><input name="name" required style="width:100%; padding:.6rem; border:1px solid var(--line); border-radius:12px; background:var(--ink-700); color:var(--fg)"></label><br><br>
+          <label>Email<br><input name="email" type="email" required style="width:100%; padding:.6rem; border:1px solid var(--line); border-radius:12px; background:var(--ink-700); color:var(--fg)"></label><br><br>
+          <label>Mensaje<br><textarea name="message" rows="4" required style="width:100%; padding:.6rem; border:1px solid var(--line); border-radius:12px; background:var(--ink-700); color:var(--fg)"></textarea></label><br><br>
+          <button class="btn" type="submit" style="background:#d4d4d8; color:#0a0a0a; border-color:#d4d4d8">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
 </main>
-<footer><div class="container">© <span id="y"></span> Isabella Bustamante — Hecho con HTML puro. Inspirado en la claridad de IKEA.</div></footer>
+
+<footer>
+  <div class="container">
+    © <span id="y"></span> Isabella Bustamante — Portfolio minimal. Inspirado en wodniack.dev.
+  </div>
+</footer>
+
 <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Isabella Bustamante","jobTitle":"Digital Content & Sustainability Analyst","email":"isabellabustamante0@gmail.com","url":"https://www.linkedin.com/in/isabella-bustamante-a2212898/","sameAs":["https://www.linkedin.com/in/isabella-bustamante-a2212898/"],"address":{"@type":"PostalAddress","addressLocality":"Madrid","addressCountry":"ES"}}</script>
-</body></html>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Isabella Bustamante",
+  "jobTitle": "Digital Content & Sustainability Analyst",
+  "email": "isabellabustamante0@gmail.com",
+  "url": "https://www.linkedin.com/in/isabella-bustamante-a2212898/",
+  "sameAs": ["https://www.linkedin.com/in/isabella-bustamante-a2212898/"],
+  "address": { "@type": "PostalAddress", "addressLocality": "Madrid", "addressCountry": "ES" }
+}
+</script>
+</body>
+</html>

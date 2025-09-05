@@ -1,89 +1,92 @@
+---
+/* No necesitas frontmatter para esta página */
+---
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Isabella Bustamante — Portfolio</title>
-<meta name="description" content="Digital Content & Sustainability Analyst — Portfolio interactivo.">
-<link rel="icon" href="data:,">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    /* Paleta arena / negro / blanco */
-    --sand:#EFE7DD; --sand-2:#E5DACB;
-    --ink-900:#0A0A0A; --ink-800:#121212;
-    --paper:#ffffff; --fg:#eaeaea; --muted:#a1a1aa; --line:#262626;
-    --accent:#E7C78A; --accent-2:#ffffff;
-    --shadow: 0 10px 30px rgba(0,0,0,.30);
-  }
-  *{box-sizing:border-box} html:focus-within{scroll-behavior:smooth}
-  body{
-    margin:0; font:16px/1.7 'Inter',system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial;
-    color:var(--fg);
-    background:
-      radial-gradient(1200px 600px at 50% -10%, rgba(231,199,138,.15), transparent 60%),
-      var(--ink-900);
-    -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
-  }
-  a{color:inherit; text-decoration:none}
-  .container{max-width:900px; margin:auto; padding:0 20px}
-  .narrow{max-width:760px}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Isabella Bustamante — Portfolio</title>
+  <meta name="description" content="Digital Content & Sustainability Analyst — Portfolio interactivo." />
+  <link rel="icon" href="data:," />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      /* Paleta arena / negro / blanco */
+      --sand:#EFE7DD; --sand-2:#E5DACB;
+      --ink-900:#0A0A0A; --ink-800:#121212;
+      --paper:#ffffff; --fg:#eaeaea; --muted:#a1a1aa; --line:#262626;
+      --accent:#E7C78A; --accent-2:#ffffff;
+      --shadow: 0 10px 30px rgba(0,0,0,.30);
+    }
+    *{box-sizing:border-box} html:focus-within{scroll-behavior:smooth}
+    body{
+      margin:0; font:16px/1.7 'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Ubuntu,Cantarell,'Noto Sans',Helvetica,Arial;
+      color:var(--fg);
+      background:
+        radial-gradient(1200px 600px at 50% -10%, rgba(231,199,138,.15), transparent 60%),
+        var(--ink-900);
+      -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+    }
+    a{color:inherit; text-decoration:none}
+    .container{max-width:900px; margin:auto; padding:0 20px}
+    .narrow{max-width:760px}
 
-  /* NAV */
-  .nav{position:sticky; top:0; z-index:50; background:rgba(10,10,10,.65); backdrop-filter:blur(10px) saturate(140%); border-bottom:1px solid var(--line)}
-  .nav-inner{height:60px; display:flex; align-items:center; justify-content:space-between}
-  .nav ul{display:flex; gap:16px; list-style:none; margin:0; padding:0}
-  .nav a{padding:6px 8px; border-radius:10px}
-  .nav a:hover{background:var(--ink-800)}
-  .brand{font-weight:800; letter-spacing:.5px}
+    /* NAV */
+    .nav{position:sticky; top:0; z-index:50; background:rgba(10,10,10,.65); backdrop-filter:blur(10px) saturate(140%); border-bottom:1px solid var(--line)}
+    .nav-inner{height:60px; display:flex; align-items:center; justify-content:space-between}
+    .nav ul{display:flex; gap:16px; list-style:none; margin:0; padding:0}
+    .nav a{padding:6px 8px; border-radius:10px}
+    .nav a:hover{background:var(--ink-800)}
+    .brand{font-weight:800; letter-spacing:.5px}
 
-  /* HERO */
-  header{padding:96px 0 28px}
-  h1{font-size:clamp(32px,5vw,56px); line-height:1.05; margin:.2em 0; letter-spacing:.2px}
-  .kicker{font:12px/1.2 'IBM Plex Mono',monospace; color:var(--muted); letter-spacing:.12em}
-  .lead{font-size:1.08rem; color:#dcdcdc}
-  .underline{position:relative; display:inline-block}
-  .underline:after{content:''; position:absolute; left:0; right:0; bottom:-6px; height:3px;
-    background:linear-gradient(90deg,var(--accent),var(--sand)); transform:scaleX(0); transform-origin:left; transition:transform .6s ease}
-  .reveal .underline:after{transform:scaleX(1)}
-  .cta-row{margin-top:14px; display:flex; gap:10px; flex-wrap:wrap}
-  .btn{display:inline-flex; gap:.6rem; align-items:center; padding:.55rem .95rem; border:1px solid var(--line); border-radius:999px; background:var(--ink-800); box-shadow:var(--shadow); transition:transform .2s ease}
-  .btn:hover{transform:translateY(-1px)}
-  .btn.primary{background:var(--accent); color:#1a1a1a; border-color:transparent}
+    /* HERO */
+    header{padding:96px 0 28px}
+    h1{font-size:clamp(32px,5vw,56px); line-height:1.05; margin:.2em 0; letter-spacing:.2px}
+    .kicker{font:12px/1.2 'IBM Plex Mono',monospace; color:var(--muted); letter-spacing:.12em}
+    .lead{font-size:1.08rem; color:#dcdcdc}
+    .underline{position:relative; display:inline-block}
+    .underline:after{content:''; position:absolute; left:0; right:0; bottom:-6px; height:3px;
+      background:linear-gradient(90deg,var(--accent),var(--sand)); transform:scaleX(0); transform-origin:left; transition:transform .6s ease}
+    .reveal .underline:after{transform:scaleX(1)}
+    .cta-row{margin-top:14px; display:flex; gap:10px; flex-wrap:wrap}
+    .btn{display:inline-flex; gap:.6rem; align-items:center; padding:.55rem .95rem; border:1px solid var(--line); border-radius:999px; background:var(--ink-800); box-shadow:var(--shadow); transition:transform .2s ease}
+    .btn:hover{transform:translateY(-1px)}
+    .btn.primary{background:var(--accent); color:#1a1a1a; border-color:transparent}
 
-  /* SECCIONES */
-  .section{scroll-margin-top:100px; padding:40px 0; border-top:1px solid var(--line)}
-  h2{font-size:clamp(22px,3.5vw,30px); margin:0 0 16px}
-  .grid{display:grid; gap:18px}
-  @media (min-width:900px){ .grid-2{grid-template-columns:1fr 1fr} .grid-3{grid-template-columns:repeat(3,1fr)} }
-  .card{background:linear-gradient(180deg, rgba(24,24,24,.85), rgba(16,16,16,.95)); border:1px solid var(--line); border-radius:16px; padding:20px; box-shadow:var(--shadow)}
-  .muted{color:var(--muted)}
+    /* SECCIONES */
+    .section{scroll-margin-top:100px; padding:40px 0; border-top:1px solid var(--line)}
+    h2{font-size:clamp(22px,3.5vw,30px); margin:0 0 16px}
+    .grid{display:grid; gap:18px}
+    @media (min-width:900px){ .grid-2{grid-template-columns:1fr 1fr} .grid-3{grid-template-columns:repeat(3,1fr)} }
+    .card{background:linear-gradient(180deg, rgba(24,24,24,.85), rgba(16,16,16,.95)); border:1px solid var(--line); border-radius:16px; padding:20px; box-shadow:var(--shadow)}
+    .muted{color:var(--muted)}
 
-  /* SLIDER PROYECTOS */
-  .slider{display:flex; gap:18px; overflow:auto; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; padding-bottom:6px}
-  .slide{min-width:80%; max-width:80%; scroll-snap-align:start}
-  @media (min-width:900px){ .slide{min-width:48%; max-width:48%} }
-  .thumb{aspect-ratio:16/9; border-radius:12px; background:linear-gradient(135deg,var(--ink-800),#0f0f0f); border:1px solid var(--line); display:flex; align-items:center; justify-content:center; color:#cfcfcf}
-  .tags{display:flex; gap:8px; flex-wrap:wrap; margin-top:8px}
-  .tag{display:inline-block; border:1px solid var(--line); border-radius:999px; padding:.25rem .6rem; font-size:.78rem; color:#d4d4d8}
+    /* SLIDER PROYECTOS */
+    .slider{display:flex; gap:18px; overflow:auto; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; padding-bottom:6px}
+    .slide{min-width:80%; max-width:80%; scroll-snap-align:start}
+    @media (min-width:900px){ .slide{min-width:48%; max-width:48%} }
+    .thumb{aspect-ratio:16/9; border-radius:12px; background:linear-gradient(135deg,var(--ink-800),#0f0f0f); border:1px solid var(--line); display:flex; align-items:center; justify-content:center; color:#cfcfcf}
+    .tags{display:flex; gap:8px; flex-wrap:wrap; margin-top:8px}
+    .tag{display:inline-block; border:1px solid var(--line); border-radius:999px; padding:.25rem .6rem; font-size:.78rem; color:#d4d4d8}
 
-  /* BLOQUE MISHKA (arena) */
-  .sand-block{background:linear-gradient(180deg, rgba(239,231,221,.95), rgba(229,218,203,.95)); color:#1f1f1f; border:1px solid #e0d5c6; border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,.18)}
-  .sand-block h3{margin:.2rem 0 .4rem}
-  .sand-tags .tag{border-color:#d8cbb7; color:#2a2a2a}
-  .gallery{display:grid; gap:10px}
-  @media (min-width:760px){ .gallery{grid-template-columns:2fr 1fr; grid-auto-rows:1fr} }
-  .gallery img{width:100%; height:100%; object-fit:cover; border-radius:12px; border:1px solid #e0d5c6}
+    /* BLOQUE MISHKA (arena) */
+    .sand-block{background:linear-gradient(180deg, rgba(239,231,221,.95), rgba(229,218,203,.95)); color:#1f1f1f; border:1px solid #e0d5c6; border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,.18)}
+    .sand-block h3{margin:.2rem 0 .4rem}
+    .sand-tags .tag{border-color:#d8cbb7; color:#2a2a2a}
+    .gallery{display:grid; gap:10px}
+    @media (min-width:760px){ .gallery{grid-template-columns:2fr 1fr; grid-auto-rows:1fr} }
+    .gallery img{width:100%; height:100%; object-fit:cover; border-radius:12px; border:1px solid #e0d5c6}
 
-  /* REVEAL */
-  .reveal{opacity:0; transform:translateY(8px); transition:opacity .6s ease, transform .6s ease}
-  .reveal.in{opacity:1; transform:none}
+    /* REVEAL */
+    .reveal{opacity:0; transform:translateY(8px); transition:opacity .6s ease, transform .6s ease}
+    .reveal.in{opacity:1; transform:none}
 
-  footer{border-top:1px solid var(--line); padding:32px 0; color:var(--muted); text-align:center}
-  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
-</style>
+    footer{border-top:1px solid var(--line); padding:32px 0; color:var(--muted); text-align:center}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+  </style>
 </head>
 <body>
 <a href="#inicio" class="kicker sr-only focus:not-sr-only">Saltar al contenido</a>
@@ -107,5 +110,172 @@
   <p class="lead reveal">Especialista en <strong>reporting ESG</strong>, <strong>content strategy</strong> y <strong>SEO</strong>. He liderado iniciativas de <em>digitalización del reporting</em> y optimización editorial para e-commerce, con foco en impacto real (personas y planeta).</p>
   <div class="cta-row reveal">
     <a class="btn primary" href="mailto:isabellabustamante0@gmail.com">✉️ Email</a>
-    <a class="btn" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/isabella-bustamante-a2212898/">in LinkedIn</a>_
+    <a class="btn" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/isabella-bustamante-a2212898/">in LinkedIn</a>
+    <span class="btn" aria-disabled="true">📞 +34 695 293 897</span>
+  </div>
+</header>
+
+<main class="container narrow">
+  <section id="experiencia" class="section">
+    <h2>Experiencia</h2>
+    <div class="grid">
+      <article class="card reveal">
+        <div style="display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap">
+          <strong>ESG Reporting · ACCIONA (Global Sustainability)</strong>
+          <span class="muted">Ene 2025 – Actualidad · Madrid, España</span>
+        </div>
+        <ul class="muted">
+          <li><strong>Liderazgo y desarrollo</strong> de <a href="https://atlas.acciona.com/" target="_blank" rel="noreferrer">ATLAS</a>, plataforma de reporting de sostenibilidad que muestra el impacto desde el contexto local (glocal).</li>
+          <li>Redacción de informes de sostenibilidad conforme a normativa europea y marcos internacionales.</li>
+          <li>Coordinación transversal para asegurar calidad de datos y seguimiento de KPIs ESG.</li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <div style="display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap">
+          <strong>Coordinadora de proyectos · Prodigioso Volcán</strong>
+          <span class="muted">Feb 2024 – Dic 2024 · Madrid, España</span>
+        </div>
+        <ul class="muted">
+          <li>Gestión integral de proyectos de comunicación y sostenibilidad (planificación, contenidos, QA).</li>
+          <li>Optimización editorial y SEO para clientes corporativos.</li>
+          <li>Apoyo en análisis de doble materialidad y taxonomías.</li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <div style="display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap">
+          <strong>Editora de contenidos · Sodimac Perú / Falabella</strong>
+          <span class="muted">2022 – 2023 · Lima, Perú</span>
+        </div>
+        <ul class="muted">
+          <li>Planificación, creación y migración de contenidos web para falabella.com.</li>
+          <li>Ejecución de tácticas SEO, email marketing e influencer marketing.</li>
+          <li>Elaboración de informes de resultados y aprendizajes de UX content.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="proyectos" class="section">
+    <h2>Proyectos clave</h2>
+    <div class="slider" aria-label="Carrusel de proyectos (desliza)">
+      <article class="slide card reveal">
+        <div class="thumb">ATLAS — ACCIONA</div>
+        <h3 style="margin:.6rem 0 .2rem">Plataforma de reporting de sostenibilidad</h3>
+        <p class="muted">Conceptualización, liderazgo y desarrollo del producto digital. Visualiza el impacto en relación al contexto local.</p>
+        <div class="tags"><span class="tag">ESG</span><span class="tag">Reporting</span><span class="tag">Producto Digital</span></div>
+        <p style="margin-top:8px"><a href="https://atlas.acciona.com/" target="_blank" rel="noreferrer">Visitar ↗</a></p>
+      </article>
+
+      <article class="slide card reveal">
+        <div class="thumb">Falabella.com — Sodimac</div>
+        <h3 style="margin:.6rem 0 .2rem">Migración y optimización de contenido</h3>
+        <p class="muted">Mejoras de SEO y UX editorial para reforzar relevancia y conversión.</p>
+        <div class="tags"><span class="tag">SEO</span><span class="tag">Content Ops</span><span class="tag">E-commerce</span></div>
+        <p style="margin-top:8px"><a href="https://www.falabella.com.pe/" target="_blank" rel="noreferrer">Visitar ↗</a></p>
+      </article>
+
+      <article class="slide card reveal">
+        <div class="thumb">Eleker.pe</div>
+        <h3 style="margin:.6rem 0 .2rem">Desarrollo web y redes</h3>
+        <p class="muted">Gestión de contenido y mensajes de marca alineados a objetivos de conversión.</p>
+        <div class="tags"><span class="tag">Web</span><span class="tag">Social</span><span class="tag">Branding</span></div>
+        <p style="margin-top:8px"><a href="https://eleker.pe/" target="_blank" rel="noreferrer">Visitar ↗</a></p>
+      </article>
+    </div>
+  </section>
+
+  <section id="mishka" class="section">
+    <h2>Mishka — Marca propia</h2>
+    <div class="sand-block reveal" style="padding:22px">
+      <div class="grid">
+        <div>
+          <h3>Tea brand: dirección creativa & contenido</h3>
+          <p style="color:#2a2a2a">Rol integral en la construcción de marca: <strong>creación de contenido</strong>, <strong>fotografía</strong>, <strong>diseño de packaging</strong> y <strong>styling propio</strong>. Proyecto con estética natural y materiales sostenibles.</p>
+          <div class="sand-tags tags">
+            <span class="tag">Branding</span><span class="tag">Packaging</span><span class="tag">Fotografía</span><span class="tag">Content</span>
+          </div>
+        </div>
+        <div class="gallery" style="margin-top:12px">
+          <img src="/assets/mishka_packaging.jpg" alt="Mishka packaging">
+          <img src="/assets/mishka_grid.jpg" alt="Grid de Instagram Mishka">
+          <img src="/assets/mishka_flatlay.jpg" alt="Flatlay té y cítricos">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="habilidades" class="section">
+    <h2>Habilidades</h2>
+    <div class="grid grid-3">
+      <div class="card reveal">
+        <h3 style="margin:0 0 8px">Core</h3>
+        <ul class="muted"><li>Content Strategy</li><li>SEO</li><li>Reporting ESG</li><li>Storytelling</li><li>Project Management</li></ul>
+      </div>
+      <div class="card reveal">
+        <h3 style="margin:0 0 8px">Herramientas</h3>
+        <ul class="muted"><li>Microsoft Office</li><li>Adobe Suite</li><li>GIS</li><li>Looker Studio</li><li>Excel</li></ul>
+      </div>
+      <div class="card reveal">
+        <h3 style="margin:0 0 8px">Idiomas</h3>
+        <ul class="muted"><li>Español (nativo)</li><li>Inglés (C1)</li><li>Italiano (B1)</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <div class="grid grid-2">
+      <div class="card reveal">
+        <h3 style="margin:0 0 8px">Hablemos</h3>
+        <ul class="muted">
+          <li>✉️ <a href="mailto:isabellabustamante0@gmail.com">isabellabustamante0@gmail.com</a></li>
+          <li>📞 +34 695 293 897</li>
+          <li>in <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/isabella-bustamante-a2212898/">LinkedIn</a></li>
+        </ul>
+      </div>
+      <form class="card reveal" action="https://formsubmit.co/isabellabustamante0@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_subject" value="Nuevo mensaje desde tu web CV" />
+        <input type="hidden" name="_template" value="table" />
+        <label>Nombre<br /><input name="name" required style="width:100%; padding:.6rem; border:1px solid var(--line); border-radius:12px; background:var(--ink-800); color:var(--fg)" /></label><br /><br />
+        <label>Email<br /><input name="email" type="email" required style="width:100%; padding:.6rem; border:1px solid var(--line); border-radius:12px; background:var(--ink-800); color:var(--fg)" /></label><br /><br />
+        <label>Mensaje<br /><textarea name="message" rows="4" required style="width:100%; padding:.6rem; border:1px solid var(--line); border-radius:12px; background:var(--ink-800); color:var(--fg)"></textarea></label><br /><br />
+        <button class="btn primary" type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container narrow">
+    © <span id="y"></span> Isabella Bustamante — Portfolio.
+  </div>
+</footer>
+
+<script>
+  // Año actual y efecto reveal
+  document.getElementById('y').textContent = new Date().getFullYear();
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"Isabella Bustamante",
+  "jobTitle":"Digital Content & Sustainability Analyst",
+  "email":"isabellabustamante0@gmail.com",
+  "url":"https://www.linkedin.com/in/isabella-bustamante-a2212898/",
+  "sameAs":["https://www.linkedin.com/in/isabella-bustamante-a2212898/"],
+  "address":{"@type":"PostalAddress","addressLocality":"Madrid","addressCountry":"ES"}
+}
+</script>
+</body>
+</html>
+
 
